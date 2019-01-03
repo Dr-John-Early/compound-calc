@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <link rel="stylesheet" type="text/css" href="default.css">
     <!-- Plotly.js -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>    
-    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
 <body>
-    
+
     <P> Text</P>
-    
-    <div id="tester" style="width:90%;height:250px;" >
+    <form>
+        <div><p>Initial Deposit</p><input type="text"></div>
+        <div><p>Regular Deposit</p><input type="text"></div>
+        <div class="dropdown">
+            <button class="dropbtn">Frequency</button>
+            <div class="dropdown-content">
+                <option value="12">Monthly</option>
+                <option value="1">Annually</option>
+            </div>
+        </div>
+    </form>
+    <div id="tester" style="width:90%;height:250px;">
         <script src="calc.js"></script>
     </div>
 
 
 </body>
+
 </html>
